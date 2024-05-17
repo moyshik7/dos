@@ -1,3 +1,3 @@
 const dos = require('./bin')
 
-dos('https://innosparkbd.com', 150, 500)
+dos('https://innosparkbd.com', 150, 200)
